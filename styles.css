@@ -11,7 +11,6 @@ body {
   min-height: 100vh;
   background: #353540;
 }
-
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,7 +19,6 @@ body {
   max-width: 1200px;
   padding: 30px;
 }
-
 .game-card {
   position: relative;
   z-index: 1;
@@ -28,7 +26,6 @@ body {
   padding-bottom: 150%;
   perspective: 1000px;
 }
-
 .game-card__cover {
   position: absolute;
   z-index: 1;
@@ -46,7 +43,6 @@ body {
   transform: skewX(0.001deg);
   transition: transform 0.35s ease-in-out;
 }
-
 .game-card__cover::after {
   display: block;
   content: '';
@@ -67,14 +63,12 @@ body {
   will-change: transform;
   transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
 }
-
 .game-card:hover .game-card__cover {
   transform: rotateX(7deg) translateY(-6px);
 }
 .game-card:hover .game-card__cover::after {
   transform: translateY(0%);
 }
-
 .game-card::before {
   display: block;
   content: '';
